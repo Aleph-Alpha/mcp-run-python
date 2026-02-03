@@ -15,7 +15,7 @@
     "format": "deno fmt"
   },
   "imports": {
-    "@modelcontextprotocol/sdk": "npm:@modelcontextprotocol/sdk@^1.17.5",
+    "@modelcontextprotocol/sdk": "npm:@modelcontextprotocol/sdk@^1.25.3",
     "@std/cli": "jsr:@std/cli@^1.0.15",
     "@std/path": "jsr:@std/path@^1.0.8",
     "pyodide": "npm:pyodide@0.28.2",
