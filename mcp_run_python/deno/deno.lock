@@ -1,19 +1,34 @@
 {
   "version": "5",
   "specifiers": {
-    "jsr:@std/cli@^1.0.15": "1.0.20",
-    "jsr:@std/path@^1.0.8": "1.0.8",
+    "jsr:@std/cli@^1.0.27": "1.0.27",
+    "jsr:@std/fmt@^1.0.9": "1.0.9",
+    "jsr:@std/internal@^1.0.12": "1.0.12",
+    "jsr:@std/path@^1.1.4": "1.1.4",
     "npm:@modelcontextprotocol/sdk@^1.25.3": "1.25.3_zod@3.25.76_ajv@8.17.1_express@5.2.1",
     "npm:@types/node@22.12.0": "22.12.0",
     "npm:pyodide@0.28.2": "0.28.2",
     "npm:zod@^3.24.4": "3.25.76"
   },
   "jsr": {
-    "@std/cli@1.0.20": {
-      "integrity": "a8c384a2c98cec6ec6a2055c273a916e2772485eb784af0db004c5ab8ba52333"
+    "@std/cli@1.0.27": {
+      "integrity": "eba97edd0891871a7410e835dd94b3c260c709cca5983df2689c25a71fbe04de",
+      "dependencies": [
+        "jsr:@std/fmt",
+        "jsr:@std/internal"
+      ]
     },
-    "@std/path@1.0.8": {
-      "integrity": "548fa456bb6a04d3c1a1e7477986b6cffbce95102d0bb447c67c4ee70e0364be"
+    "@std/fmt@1.0.9": {
+      "integrity": "2487343e8899fb2be5d0e3d35013e54477ada198854e52dd05ed0422eddcabe0"
+    },
+    "@std/internal@1.0.12": {
+      "integrity": "972a634fd5bc34b242024402972cd5143eac68d8dffaca5eaa4dba30ce17b027"
+    },
+    "@std/path@1.1.4": {
+      "integrity": "1d2d43f39efb1b42f0b1882a25486647cb851481862dc7313390b2bb044314b5",
+      "dependencies": [
+        "jsr:@std/internal"
+      ]
     }
   },
   "npm": {
@@ -544,8 +559,8 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@std/cli@^1.0.15",
-      "jsr:@std/path@^1.0.8",
+      "jsr:@std/cli@^1.0.27",
+      "jsr:@std/path@^1.1.4",
       "npm:@modelcontextprotocol/sdk@^1.25.3",
       "npm:pyodide@0.28.2",
       "npm:zod@^3.24.4"
